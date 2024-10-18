@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "de-training-101"
+version = "0.1.0"
+description = ""
+authors = ["kexin.an <kexin.an@thoughtworks.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.32.3"
+boto3 = "^1.35.40"
+pyspark = "^3.5.3"
+apache-airflow = {version = "2.10.2", python = ">=3.10,<3.12"}
+apache-airflow-providers-apache-spark = "4.11.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
